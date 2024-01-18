@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+            //javascript class and object
+            //class contains properties attributes & methods
+            class Person
+            {
+                  setdata(id,name,status)
+                 {
+                    //pid,pname,pstatus are properties in person class
+                   this.pid=id   
+                   this.pname=name
+                   this.pstatus=status
+                 }
+                 get data()
+                 {
+                    document.writeln("Person ID="+this.pid+"</br>")
+                    document.writeln("Person Name="+this.pname+"</br>")
+                    document.writeln("Person Status="+this.pstatus+"</br>")
+                 }
+            }
+             let p1=new Person()//p1 is an object of person class
+             p1.setdata(1,"klu",true)
+             p1.getdata()
+           
+             let p2=new Person()//p2 is an object of person class
+             p2.setdata(2,"mswd",false)
+             p2.getdata()
+             document.writeln(p1.pid+","+p1.name+","+p1.status)
+             document.writeln("</br>")
+            document.writeln(p2.pid+","+p2.name+","+p2.status)
+        </script>
+    </head>
+    <body>
